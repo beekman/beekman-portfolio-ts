@@ -1,0 +1,99 @@
+@value colors: '../colors.css';
+@value lightblue, yellow, offwhite, white, darkgray, lightyellow, whiteblue from colors;
+
+.Header{
+  position: fixed;
+  z-index: 999999999;
+}
+
+.Header{
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: fixed;
+  background-color: RGBA(0,0,0,1);
+  width: 100%;
+
+  h1{
+    display: inline-block;
+  }
+
+  .Logo {
+    font-family: 'Play', sans-serif;
+    line-height: 1em;
+    color: white;
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    display: inline-block;
+
+    strong {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: normal;
+    position: relative;
+    display: inline-block;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    transition-property: color;
+    text-transform: lowercase;
+    color: #37e8fd;
+
+    &:hover {
+      color: #d7ffff;
+    }
+  }
+
+    > b {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 10;
+    transition-timing-function: ease;
+    transition-duration: .7s;
+    transition-property: color;
+    color: #bafd31;
+    }
+
+    > b:hover {
+      color: #d7ffff;
+    }
+    .dev {
+      font-size: 16px;
+      color: offwhite;
+    }
+  }
+
+  .Nav{
+    display: inline-block;
+
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      list-style-type: none;
+      justify-content: center;
+
+      li {
+        color: #FFFFFF;
+        background: #232323;
+
+        a {
+          text-decoration: none;
+          color: lightblue;
+          padding: 0 1rem;
+
+          &:active, &:hover {
+            color: whiteblue;
+            text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 55px yellow, 0 0 75px yellow;
+            cursor: pointer;
+          }
+
+          &.active {
+            color: lightyellow;
+            background-color: darkgray;
+            text-shadow: 0 -1px 4px whiteblue, 0 -2px 10px lightyellow, 0 -10px 20px yellow;
+          }
+        }
+      }
+    }
+  }
+}

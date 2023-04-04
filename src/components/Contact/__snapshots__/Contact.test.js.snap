@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact component matches snapshot 1`] = `
+<Element
+  className="Contact"
+  name="Contact"
+>
+  <div
+    className="Contact"
+  >
+    <ScrollAnimation
+      animateIn="tada"
+      animateOnce={false}
+      animatePreScroll={true}
+      delay={0}
+      duration={1}
+      initiallyVisible={false}
+      offset={150}
+    >
+      <h1>
+        Let's Connect!
+      </h1>
+    </ScrollAnimation>
+    <p
+      className="hiringStatus"
+    >
+      You can reach me using any of the contact options below.
+    </p>
+    <Typist
+      avgTypingDelay={70}
+      className=""
+      cursor={
+        Object {
+          "show": false,
+        }
+      }
+      delayGenerator={[Function]}
+      onCharacterTyped={[Function]}
+      onLineTyped={[Function]}
+      onTypingDone={[Function]}
+      startDelay={0}
+      stdTypingDelay={25}
+    >
+      <h2
+        className="tagline"
+      >
+        import SoftwareEngineer from 'benbeekman.dev';
+      </h2>
+    </Typist>
+    <section
+      className="social"
+    >
+      Ben Beekman
+      <br />
+      Portland
+      , 
+      OR
+      <br />
+      <br />
+      <a
+        href="!mailtoben@benbeekman.dev"
+      >
+        <AiOutlineMail />
+        ben@benbeekman.dev
+      </a>
+      <br />
+      <a
+        href="https://www.linkedin.com/in/beekman/"
+      >
+        <FaLinkedin />
+        /in/beekman
+      </a>
+      <br />
+      <a
+        href="https://github.com/beekman"
+      >
+        <FaGithub />
+        /beekman
+      </a>
+      <br />
+      <a
+        href="https://www.canva.com/design/DAFYjYgRh2U/-dWbni-s5-Vx3sctCYxPIA/view?utm_content=DAFYjYgRh2U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        View my resume
+      </a>
+    </section>
+  </div>
+</Element>
+`;

@@ -1,0 +1,34 @@
+@value colors: '../colors.css';
+@value offwhite, white, whiteblue, lightblue, yellow, brightyellow, lightyellow, yellowgreen,  pink, bubblegum, green, darkyellow, darkgray, darkblue from colors;
+
+.Contact{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+
+  h1 {
+    text-shadow: 0 0 0.075rem offwhite, 0 0 0.125rem offwhite, 0 0 0.15rem whiteblue, 0 0 0.25rem lightblue, 0 0 0.4rem lightblue, 0 0 0.5rem lightblue, 0 0 0.75rem lightblue, 0 0 1rem green;
+    color: rgb(130, 134, 136)134, 136);
+  }
+
+  .hiringStatus {
+    max-width: 60%;
+  }
+
+  .tagline {
+    color: yellow;
+    background-color: darkgray;
+  }
+
+  .social {
+    display: block;
+    text-align: left;
+    max-width: 480px;
+  }
+}

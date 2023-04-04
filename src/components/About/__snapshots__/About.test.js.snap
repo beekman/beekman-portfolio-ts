@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component matches snapshot 1`] = `
+<Element
+  className="About"
+  name="About"
+>
+  <header>
+    <h1>
+      <Typist
+        avgTypingDelay={70}
+        className=""
+        cursor={
+          Object {
+            "hideWhenDone": true,
+          }
+        }
+        delayGenerator={[Function]}
+        onCharacterTyped={[Function]}
+        onLineTyped={[Function]}
+        onTypingDone={[Function]}
+        startDelay={0}
+        stdTypingDelay={25}
+      >
+        Hi, I'm Ben. I'm a Full Stack Web Engineer
+        <Backspace
+          count={12}
+          delay={750}
+        />
+        <Delay
+          ms={800}
+        />
+        Software Engineer
+        <Backspace
+          count={28}
+          delay={750}
+        />
+        <Delay
+          ms={850}
+        />
+        Front End Engineer
+        <Backspace
+          count={18}
+          delay={500}
+        />
+        <Delay
+          ms={850}
+        />
+        Back End Engineer
+        <Backspace
+          count={17}
+          delay={500}
+        />
+        <Delay
+          ms={1150}
+        />
+        Full Stack Engineer.
+      </Typist>
+    </h1>
+  </header>
+  <main>
+    <section>
+      <p>
+        I'm a full-stack web and software engineer with an entrepreneurial background in front-end web development, SEO, and education. I'm enthusiastic about creating code that solves human-centered problems and I love learning and teaching new techniques and technologies.
+      </p>
+      <p>
+        As a full-stack web engineer role at a startup, I spent the past fifteen months working on a wide variety of web-based software and plugins to aid with internal multi-departmental processes. Before that, I spent more than a decade developing and designing websites.
+      </p>
+    </section>
+    <figure
+      className="profile"
+    >
+      <img
+        src="/path/image"
+      />
+    </figure>
+  </main>
+</Element>
+`;

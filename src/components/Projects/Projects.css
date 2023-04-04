@@ -1,0 +1,117 @@
+@value colors: '../colors.css';
+@value lightblue, yellow, offwhite, white, darkgray, whiteblue, lightyellow from colors;
+
+.Projects {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  height: auto;
+  color: offwhite;
+  padding: 1rem 2rem;
+
+  header, section, summary, header p {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-shadow: .0125rem .0125rem 0 lightblue, .0125rem -.0125rem 0 lightblue, -.0125rem .0125rem 0 lightblue, -.0125rem -.0125rem 0 lightblue, .0125rem 0px 0 lightblue, 0px .0125rem 0 lightblue, -.0125rem 0px 0 lightblue, 0px -.0125rem 0 lightblue;
+    color: yellow;
+  }
+
+  header{
+    display: block;
+    padding: 1rem 0 1rem 3rem;
+  }
+
+  .Project {
+    border-radius: 0.75rem;
+    margin: 0.5rem auto;
+    padding: 0;
+
+    .feature {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      padding: 0;
+      width: 100%;
+
+      h2 {
+        color: black;
+        text-shadow: 0 0 0.075rem offwhite, 0 0 0.125rem offwhite, 0 0 0.15rem offwhite, 0 0 0.25rem #45E8FC, 0 0 0.4rem #45E8FC, 0 0 0.5rem #45E8FC, 0 0 .75rem #45E8FC, 0 0 1rem #45E8FC;
+      }
+
+      .summary {
+        padding: 3rem;
+      }
+
+      .mediaBox{
+        border-radius: 1rem;
+      }
+
+      div{
+        padding: 0;
+        justify-content: space-around;
+        align-items: center;
+
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .usedTech {
+      display: block;
+      margin: 0 auto;
+      justify-content: center;
+      background-color: offwhite;
+      color: darkgray;
+
+      h2 {
+        font-weight: bold;
+        margin: 0;
+        padding: 1rem 0 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+      .tech {
+        padding: 0.75rem;
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1rem;
+
+        img {
+          max-height: 30px;
+          width: auto;
+          padding: 0 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px){
+  .Projects {
+    header {
+      .Project {
+        .feature {
+          display: block;
+          padding: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

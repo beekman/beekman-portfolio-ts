@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Projects.css';
-import ScrollAnimation from 'react-animate-on-scroll';
+import styles from './Projects.module.css';
+// import ScrollAnimation from 'react-animate-on-scroll';
 import react from '../../assets/tech/thumbs/react-logo-60px.png';
 import js from '../../assets/tech/thumbs/javascript-logo-60px.png';
 import postgres from '../../assets/tech/thumbs/Postgresql-logo-60px.png';
@@ -111,13 +111,13 @@ const Project = ({ feature }) => {
           </div>
         </div>
         <div className={styles.mediaBox}>
-          <ScrollAnimation animateIn="fadeInUp">
-            <img
-              src={screenObj[feature.title]}
-              alt={feature.title}
-              title={feature.title}
-            />
-          </ScrollAnimation>
+          {/* <ScrollAnimation animateIn="fadeInUp"> */}
+          <img
+            src={screenObj[feature.title]}
+            alt={feature.title}
+            title={feature.title}
+          />
+          {/* </ScrollAnimation> */}
           <section className={styles.usedTech}>
             <h2>Tech stack</h2>
             <div className={styles.tech}>{TechList}</div>

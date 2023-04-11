@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Projects.css';
+import styles from './Projects.module.css';
 import Project from './Project';
 import PropTypes from 'prop-types';
 import { Element } from 'react-scroll';

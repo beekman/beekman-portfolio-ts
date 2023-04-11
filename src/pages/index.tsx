@@ -32,8 +32,8 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Nav />
-        <About about={data.about} />
-        <Skills skills={data.skills} learning={data.learning} />
+        <About about={data.about} summary={''} title={''} pitch={''} />
+        <Skills skills={data.skills} />
         <Projects projects={data.projects} />
         <Contact contact={data.contact} />
       </main>

@@ -7,7 +7,43 @@ import About from '../components/About/About';
 import Skills from '../components/Skills/Skills';
 import Projects from '../components/Projects/Projects';
 import Contact from '../components/Contact/Contact';
-import data from '../portfolio-data';
+import Data from '../portfolio-data';
+
+interface Technology {
+  name: string;
+}
+
+interface Skill {
+  heading: string;
+  techHeading: string;
+  techCopy: string;
+  tech: Technology[];
+  learningCopy: string;
+  learning: Technology[];
+  resumeLink: string;
+}
+
+interface Feature {
+  title: string;
+  description: string;
+  demo: string;
+  github: string;
+  tech: Technology[];
+}
+
+interface Projects {
+  history: string;
+  summary: string;
+  designPortfolioLink: string;
+  feature: Feature[];
+}
+
+interface Data {
+  about: About;
+  contact: Contact;
+  skills: Skill;
+  projects: Projects;
+}
 
 export default function Home() {
   return (
@@ -24,18 +60,41 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins&family=Play&display=swap"
           rel="stylesheet"
         />
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
-        />
-        <link rel="stylesheet" href="./components/style.css/" />
+        /> */}
       </Head>
       <main className={styles.main}>
         <Nav />
-        <About about={data.about} summary={''} title={''} pitch={''} />
-        <Skills skills={data.skills} />
-        <Projects projects={data.projects} />
-        <Contact contact={data.contact} />
+        <About about={Data.about} title={''} summary={''} pitch={''} />
+        <Skills
+          skills={Data.skills}
+          tech={[]}
+          learning={[]}
+          heading={''}
+          techHeading={''}
+          techCopy={''}
+          learningCopy={''}
+          resumeLink={''}
+        />
+        <Projects projects={Data.projects} />
+        <Contact
+          contact={Data.contact}
+          name={''}
+          heading={''}
+          resumeLink={''}
+          street={''}
+          city={''}
+          state={''}
+          zip={''}
+          phone={''}
+          email={''}
+          linkedinURL={''}
+          githubURL={''}
+          tagline={''}
+          hiringStatus={''}
+        />
       </main>
     </>
   );

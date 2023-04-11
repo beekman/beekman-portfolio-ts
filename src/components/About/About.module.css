@@ -1,0 +1,107 @@
+@value colors: '../colors.css';
+@value lightblue, yellow, offwhite, white, darkgray from colors;
+
+.About {
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+  color: white;
+  background-color: darkgray;
+  display: flex;
+  top: 3rem;
+}
+
+.About header, .About main {
+  max-width: 1200px;
+}
+
+.About header, .About section, .About summary {
+  max-width: 1200px;
+}
+
+.About p {
+  color: offwhite;
+}
+
+@media screen and (max-width: 720px){
+  .About {
+    flex-direction: column;
+    top: 120px;
+    padding: 10px;
+    position: relative;
+  }
+
+
+  .About header h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    color: #45E8FC;
+    position: relative;
+    top: 50px;
+    color: yellow;
+  }
+
+  .About main{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+
+  .About section{
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .About figure {
+    margin: 4.5rem auto 0;
+  }
+
+  .About img {
+    border-radius: 50%;
+    max-width: 80px;
+  }
+}
+
+@media screen and (min-width: 721px){
+  .About {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    top: 3.2rem;
+    padding: 1rem 2rem;
+  }
+  .About header h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2rem;
+    color: yellow;
+  }
+
+  .About main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .About main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .About main figure {
+    padding: 1rem;
+  }
+
+  .About main figure img {
+    border-radius: 50%;
+    max-width: 150px;
+  }
+}

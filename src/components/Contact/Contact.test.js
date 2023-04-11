@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Contact from './Contact';
+import Contact from './Contact.module.css';
 import data from '../../portfolio-data';
 
 describe('Contact component', () => {

@@ -15,7 +15,7 @@ const About = (about: About) => {
   return (
     <Element name="About" className={styles.About}>
       <header>
-        <h1>`Hi, I&apos;m Ben. I&apos;m a Full Stack Web Engineer`</h1>
+        <h1>{about.title}</h1>
       </header>
 
       <main>
@@ -33,7 +33,7 @@ const About = (about: About) => {
 
 About.propTypes = {
   about: PropTypes.shape({
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     summary: PropTypes.string.isRequired,
     pitch: PropTypes.string.isRequired,
   }),

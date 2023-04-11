@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Skills.module.css';
 import Skill from './Skill';
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
 import { Element } from 'react-scroll';
 
 interface Skill {
@@ -54,15 +54,12 @@ const Skills = (skills: Skills) => {
           </p>
 
           <h2 className={styles.skillsHeading}>{skills.techHeading}</h2>
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-            <ul className={styles.SkillList}>{SkillList}</ul>
-          </ScrollAnimation>
+
+          <ul className={styles.SkillList}>{SkillList}</ul>
 
           <h2 className={styles.skillsHeading}>I&apos;m learning these</h2>
 
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeIn">
-            <ul className={styles.SkillList}>{LearningList}</ul>
-          </ScrollAnimation>
+          <ul className={styles.SkillList}>{LearningList}</ul>
         </section>
       </div>
     </Element>
